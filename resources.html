@@ -78,13 +78,14 @@
                     <hr class="section-heading-spacer">
                     <div class="clearfix"></div>
                     <h2 class="section-heading">Resources</h2>
+                    <h3>Locate the clinics closest to you.</h3>
+                    <form name="searchmap" id="searchmap">
+                        <label for="searchloc">Enter your location: <input type=text class="form-control" name="searchloc" id="searchloc" value="Kampala, Uganda"></label>
+                        <input type=button class="btn btn-default" value="Submit" id="submitinfo" onclick="newloc()"></br>
+                    </form>
                     <p><iframe id="googlemap" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"width="642" height="443"
                         src="https://www.google.com/maps/embed/v1/search?key=AIzaSyApcX1rlj7GBKpbWhvd83CjRWUB9pYzJvc&q=clinics+in+Kampala,Uganda" allowfullscreen>
                     </iframe></p>
-                    <form name="searchmap" id="searchmap">
-                        <label for="searchloc">Your location: <input type=text class="form-control" name="searchloc" id="searchloc" value="Kampala, Uganda"></label>
-                        <input type=button class="btn btn-default" value="Submit" id="submitinfo" onclick="newloc()"></br>
-                    </form>
                 </div>
             </div>
 
