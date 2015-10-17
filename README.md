@@ -10,3 +10,6 @@
 #username: admin
 #email: dxl3349@rit.edu
 #password: password
+
+#Install widget-tweaks
+pip install django-widget-tweaks
