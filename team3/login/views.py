@@ -29,3 +29,14 @@ def user_login(request):
 		return HttpResponse(bad_template.render())
         # Return an 'invalid login' error message.
         
+        
+def register_user(requests):
+	username = request.POST.get('username', False)
+	password = request.POST.get('password', False)
+	email = request.POST.get('email', False)
+	user = User.object.create_user(username, email, password)
+
+	#user.stuff = 'new stuff'
+	user.save()
+	good_template = loader.get_template('user_login.html')
+	return HttpResponse(good_template.render())
