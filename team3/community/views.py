@@ -22,3 +22,6 @@ def create(request):
 		form = CommunityCreationForm()
 
 	return render(request, 'community/makecommunities.html', {'form':form})
+
+def community1(request):
+	return render(request, 'community/comm1.html')
