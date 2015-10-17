@@ -2,17 +2,17 @@
 <html lang="en">
 
 <head>
-    {% load staticfiles %}
+{% load staticfiles %}
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Landing Page - Start Bootstrap Theme</title>
+    <title>ALIVE</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="{% static 'css/bootstrap.min.css'%}" rel="stylesheet">
+    <link href="{% static 'css/bootstrap.css'%}" rel="stylesheet">
 
     <!-- Custom CSS -->
     <link href="{% static 'css/landing-page.css'%}" rel="stylesheet">
@@ -42,7 +42,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand topnav" href="index.html">Name</a>
+                <a class="navbar-brand topnav" style="font-size: 20px; letter-spacing:0.1em" href="/">ALIVE</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -95,26 +95,38 @@
 
     <!-- Page Content -->
 
-	<a  name="services"></a>
+    <a  name="services"></a>
     <div class="content-section-a">
 
         <div class="container">
             <div class="row">
-                <div class="col-lg-5 col-sm-6">
+                <div class="col-md-6">
                     <hr class="section-heading-spacer">
                     <div class="clearfix"></div>
                     <h2 class="section-heading">About Us</h2>
-                    <p class="lead">We are an Anonymous coummunity where you can feel safe to come and talk </p>
+                    <p class="lead">We are group of global communities where you can feel safe to come and talk. You have the opportunity to interact with other people all round the world. You can even ask an expert any questions you have. </p>
+                    <p><img src="{% static 'img/about_us_pic.jpg'%}" alt="about us pic" class="img-rounded" height="200" width="350"></p>
+
                 </div>
-                <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-                    <img src="{% static 'img/about_us_pic.jpg'%}" alt="about us pic" height="300" width="500">
+
+                <div  class ="col-md-6" style="padding-left: 250px">
+
+                    <h2 class="section-heading">Twitter Feed Input</h2>
+                    <a class="twitter-timeline" href="https://twitter.com/TheBodyDotCom" data-widget-id="655244740670201857">Tweets by @TheBodyDotCom</a>
+                    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+
                 </div>
+
             </div>
+        </div>
 
         </div>
-        <!-- /.container -->
 
+
+        <!-- /.container -->
     </div>
+
     <!-- /.content-section-a -->
 
     <div class="content-section-b">
@@ -147,86 +159,27 @@
         <!-- /.container -->
 
     </div>
-    <!-- /.content-section-b -->
-
-    <div class="content-section-a">
-
-        <div class="container">
-
-            <div class="row">
-                <div class="col-lg-5 col-sm-6">
-                    <hr class="section-heading-spacer">
-                    <div class="clearfix"></div>
-                    <h2 class="section-heading">Google Web Fonts and<br>Font Awesome Icons</h2>
-                    <p class="lead">This template features the 'Lato' font, part of the <a target="_blank" href="http://www.google.com/fonts">Google Web Font library</a>, as well as <a target="_blank" href="http://fontawesome.io">icons from Font Awesome</a>.</p>
-                </div>
-                <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-                    <img class="img-responsive" src="{% static 'img/phones.png'%}" alt="">
-                </div>
-            </div>
-
-        </div>
-        <!-- /.container -->
-
-    </div>
     <!-- /.content-section-a -->
-
-	<a  name="contact"></a>
-    <div class="banner">
-
-        <div class="container">
-
-            <div class="row">
-                <div class="col-lg-6">
-                    <h2>Connect to Start Bootstrap:</h2>
-                </div>
-                <div class="col-lg-6">
-                    <ul class="list-inline banner-social-buttons">
-                        <li>
-                            <a href="https://twitter.com/SBootstrap" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
-                        </li>
-                        <li>
-                            <a href="https://github.com/IronSummitMedia/startbootstrap" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
-                        </li>
-                        <li>
-                            <a href="#" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">Linkedin</span></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-        </div>
-        <!-- /.container -->
-
-    </div>
-    <!-- /.banner -->
 
     <!-- Footer -->
     <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <ul class="list-inline">
-                        <li>
-                            <a href="#">Home</a>
-                        </li>
-                        <li class="footer-menu-divider">&sdot;</li>
-                        <li>
-                            <a href="#about">About</a>
-                        </li>
-                        <li class="footer-menu-divider">&sdot;</li>
-                        <li>
-                            <a href="#services">Services</a>
-                        </li>
-                        <li class="footer-menu-divider">&sdot;</li>
-                        <li>
-                            <a href="#contact">Contact</a>
-                        </li>
-                    </ul>
-                    <p class="copyright text-muted small">Copyright &copy; Your Company 2014. All Rights Reserved</p>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <hr class="section-heading-spacer">
+                        <div class="clearfix"></div>
+                        <h2 class="section-heading">Keep Child Alive Links</h2>
+                        <p class="lead"><a href="http://keepachildalive.org/">Keep a Child Alive</a></p>
+                    </div>
+                    <div class="col-md-6">
+                        <hr class="section-heading-spacer">
+                        <div class="clearfix"></div>
+                        <h2 class="section-heading">Social Media Links</h2>
+                        <p class="lead"><a href="https://facebook.com/" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Facebook</span></a></p>
+                    </div>
+
                 </div>
             </div>
-        </div>
     </footer>
 
     <!-- jQuery -->

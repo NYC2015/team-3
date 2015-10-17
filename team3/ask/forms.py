@@ -1,7 +1,7 @@
 from django import forms
 
 class AskForm(forms.Form):
-	question = forms.CharField(label='Question', max_length=500)
+	question = forms.CharField(widget=forms.Textarea(),label='Question', max_length=500)
 	question.widget.attrs.update({'class' : 'form-control'})
 	email = forms.CharField(label='Email', max_length=100)
 	email.widget.attrs.update({'class' : 'form-control'})
