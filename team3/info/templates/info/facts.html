@@ -1,3 +1,146 @@
-<html>
-THIS IS THE FACTS PAGE
-</html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+{% load staticfiles %}
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>ALIVE</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="{% static 'css/bootstrap.css'%}" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="{% static 'css/landing-page.css'%}" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
+        <div class="container topnav">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand topnav" style="font-size: 20px; letter-spacing:0.1em" href="/">ALIVE</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="/facts">Facts</a></li>
+                    <li><a href="/resources">Resources</a></li>
+                    <li><a href="/communities">Communities</a></li>
+                    <li><a href="/ask">Ask An Expert</a></li>
+                </ul>
+                <form class="navbar-form navbar-right">
+                   <div class="form-group">
+                       <input type="text" class="form-control" name="username" placeholder="Username">
+                   </div>
+                   <div class="form-group">
+                       <input type="text" class="form-control" name="password" placeholder="Password">
+                   </div>
+                   <button type="submit" class="btn btn-default">Sign In</button>
+               </form>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Content -->
+
+	<a  name="services"></a>
+    <div class="content-section-b">
+
+        <div class="container">
+            <div class="row">
+                            <div class="col-xs-6>
+                                <hr class="section-heading-spacer">
+                                <div class="clearfix"></div>
+                                <h2 class="section-heading">Facts About HIV/AIDS</h2>
+                            </div>
+                <div class="col-xs-6">
+                    <img src="{% static 'img/HIV.jpg'%}" alt="HIV" class="img-rounded" height="200" width="350"">
+                </div>
+
+                    <p class="lead"><a href="#Signs and Symptoms">Signs and Symptoms</a></p>
+                    <p class="lead"><a href="#Transmission">Transmission</a></p>
+                    <p class="lead"><a href="#Prevention">Prevention</a></p>
+                    <p class="lead"><a href="#Treatment">Treatment</a></p>
+                    <p class="lead"><a href="#Sources">Sources</a></p>
+        </div>
+
+
+                            <div class="content-section-b">
+                                <div class="container">
+                    <p class="lead"><a name="Signs and Symptoms">Signs and Symptoms</a></p>
+                    <h4 class="section-heading">Within 2-4 weeks after HIV infection, many, but not all, people experience flu-like symptoms, often described as the “worst flu ever.” This is called acute retroviral syndrome (ARS) and it’s the body’s natural response to the HIV infection.
+                       </h4>
+                                    <h4 class="section-heading">Symptoms can include:</h4>
+                                    <ul>Fever (this is the most common symptom)</ul>
+                                    <ul>Swollen glands</ul>
+                                    <ul> Sore throat</ul>
+                                    <ul>Rash</ul>
+                                    <ul>Fatigue</ul>
+                                    <ul>Muscle and joint aches and pains</ul>
+                                    <ul>Headache</ul>
+
+                        <h4>These symptoms can last anywhere from a few days to several weeks.
+                        You should not assume you have HIV just because you have any of these symptoms. Each of these symptoms can be caused by other illnesses. And some people who have HIV do not show any symptoms at all for 10 years or more.
+                        If you think you may have been exposed to HIV, get an HIV test. Most HIV tests detect antibodies (proteins your body makes against HIV), not HIV itself. But it takes a few weeks for your body to produce these antibodies, so if you test too early, you might not get an accurate test result. A new HIV test is available that can detect HIV directly during this early stage of infection. So be sure to let your testing site know if you think you may have been recently infected with HIV.</h4>
+                                    </div>
+                                </div>
+
+
+                    <div class="content-section-b">
+                        <div class="container">
+                    <p class="lead"><a name="Transmission">Transmission</a></p>
+                            <h4 class="section-heading">HIV is spread mainly by having sex or sharing injection drug equipment such as needles with someone who has HIV.
+
+                                Only certain fluids—blood, semen (cum), pre-seminal fluid (pre-cum), rectal fluids, vaginal fluids, and breast milk—from an HIV-infected person can transmit HIV. These fluids must come in contact with a mucous membrane or damaged tissue or be directly injected into the bloodstream (from a needle or syringe) for transmission to possibly occur. Mucous membranes can be found inside the rectum, the vagina, the opening of the penis, and the mouth.
+
+                                </h4>
+                            <h4 class="section-heading">HIV is spread mainly by</h4>
+
+                                <ul>Having sex with someone who has HIV.</ul>
+                                    <ul>Sharing needles, syringes, rinse water, or other equipment (works) used to prepare injection drugs with someone who has HIV.</ul>
+                            <h4 class="section-heading">Less commonly, HIV may be spread by</h4>
+
+                                    <ul>Being born to an infected mother. HIV can be passed from mother to child during pregnancy, birth, or breastfeeding.</ul>
+                                <ul>Being stuck with an HIV-contaminated needle or other sharp object. This is a risk mainly for health care workers.</ul>
+                                <ul>Receiving blood transfusions, blood products, or organ/tissue transplants that are contaminated with HIV. This risk is extremely small because of rigorous testing of the US blood supply and donated organs and tissues.</ul>
+                                <ul>Eating food that has been pre-chewed by an HIV-infected person. The contamination occurs when infected blood from a caregiver’s mouth mixes with food while chewing, and is very rare.</ul>
+                                <ul>Being bitten by a person with HIV. Each of the very small number of documented cases has involved severe trauma with extensive tissue damage and the presence of blood. There is no risk of transmission if the skin is not broken.</ul>
+                                <ul>Oral sex—using the mouth to stimulate the penis, vagina, or anus (fellatio, cunnilingus, and rimming). Giving fellatio (mouth to penis oral sex) and having the person ejaculate (cum) in your mouth is riskier than other types of oral sex.</ul>
+                                <ul>Contact between broken skin, wounds, or mucous membranes and HIV-infected blood or blood-contaminated body fluids. These reports have also been extremely rare.</ul>
+                                <ul>Deep, open-mouth kissing if the person with HIV has sores or bleeding gums and blood is exchanged. HIV is not spread through saliva. Transmission through kissing alone is extremely rare.</ul>
+                            </div>
+                        </div>
+
+                    <div class="content-section-b">
+                        <div class="container">
+                    <p class="lead"><a name="Prevention">Prevention</a></p>
+                            <h4 class="section-heading">Anyone can get HIV, but you can take steps to protect yourself from HIV infection.</h4>
+                                <ul>Get tested and know your partner’s HIV status. Talk to your partner about HIV testing and get tested before you have sex.</ul>
+                            <ul>Have less risky sex. Oral sex is much less risky than anal or vaginal sex. Anal sex is the most risky type of sex for HIV transmission.</ul>
+                                <ul> Use condoms. Use a condom correctly every time you have vaginal, anal, or oral sex. Read this fact sheet from the Centers for Disease Control and Prevention (CDC) o
