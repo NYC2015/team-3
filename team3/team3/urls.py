@@ -21,4 +21,5 @@ urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
     url(r'^communities/', include('community.urls')),
     url(r'^ask/', include('ask.urls')),
+    url(r'^join/', include('login.urls')),
 ]
