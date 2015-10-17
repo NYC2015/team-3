@@ -54,11 +54,11 @@ def registration_page(request):
 	# create a form instance and populate it with data from the request:
 		form = RegisterForm(request.POST)
 	# check whether it's valid:
-		if form.is_valid():
+	#if form.is_valid():
 	# process the data in form.cleaned_data as required
 	# ...
 	# redirect to a new URL:
-			return HttpResponseRedirect('/communities')
+		return HttpResponseRedirect('/communities')
 
 	# if a GET (or any other method) we'll create a blank form
 	else:
