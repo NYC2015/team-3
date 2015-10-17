@@ -1,6 +1,6 @@
 function newloc(){
     var place = document.getElementById("searchloc").value;
     var themap = document.getElementById("googlemap");
-    themap.src="https://maps.google.com/maps?hl=en&q=" + place + "&ie=UTF8&t=roadmap&z=6&iwloc=B&output=embed";
+    themap.src="https://www.google.com/maps/embed/v1/search?key=AIzaSyApcX1rlj7GBKpbWhvd83CjRWUB9pYzJvc&q=clinics+in+" + place;
     console.log(themap.src);
 }

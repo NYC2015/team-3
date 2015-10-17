@@ -41,3 +41,6 @@ def register_user(requests):
 	user.save()
 	good_template = loader.get_template('user_login.html')
 	return HttpResponse(good_template.render())
+
+def registration_page(request):
+	return render(request, 'registration.html')
