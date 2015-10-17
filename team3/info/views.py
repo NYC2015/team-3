@@ -9,3 +9,6 @@ def facts(request):
 
 def resources(request):
 	return render(request, 'info/resources.html')
+
+def profile(request):
+	return render(request, 'info/profile.html')
