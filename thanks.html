@@ -11,13 +11,11 @@
 
     <title>Ask An Expert</title>
 
-
-	{% load staticfiles %}
     <!-- Bootstrap Core CSS -->
-    <link href="{% static 'css/bootstrap.css'%}" rel="stylesheet">
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="{% static 'css/landing-page.css'%}" rel="stylesheet">
+    <link href="bootstrap/css/landing-page.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
@@ -44,7 +42,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand topnav" style="font-size: 20px; letter-spacing:0.1em" href="/">ALIVE</a>
+                <a class="navbar-brand topnav" style="font-size: 20px; letter-spacing:0.1em" href="index.html">ALIVE</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -71,37 +69,22 @@
 
     <!-- Page Content -->
 
-	<a  name="services"></a>
-    <div class="content-section-b">
-
         <div class="container">
             <div class="row">
-                <div class="col-lg-5 col-sm-6">
-                    <hr class="section-heading-spacer">
+                <div class="col-md-6 col-md-offset-3" style="text-align: center; padding-top: 100px;">
                     <div class="clearfix"></div>
-                    <h2 class="section-heading">Ask An Expert</h2>
-                    	<form action="" method="post">
-							<div class="container-fluid">
-						    	{% csrf_token %}
-						    	{{ form.as_p }}
-						    	<input type="submit" value="Submit">
-							</div>
-						</form>
+                    <h2 class="section-heading">Thank you, your question has been submitted. An expert will get back to you shortly.</h2>
                 </div>
             </div>
 
         </div>
         <!-- /.container -->
 
-    </div>
-    <!-- /.content-section-a -->
-
-
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="{% static 'js/bootstrap.min.js'%}"></script>
+    <script src="js/bootstrap.min.js"></script>
 
 </body>
 
