@@ -7,4 +7,6 @@ from info import views
 
 urlpatterns = [
 	url(r'^$', views.index, name='index'),
+	url(r'^facts/', views.facts, name='facts'),
+	url(r'^resources/', views.resources, name='resources'),
 ]
