@@ -7,10 +7,11 @@ import datetime
 
 
 def user_login(request):
-	username = request.POST.get('username', False)
-	password = request.POST.get('password', False)
-	username = "dRock"
-	password = "pass"
+	#username = request.POST.get('username', False)
+	#password = request.POST.get('password', False)
+	form = NavBarForm(POST.request)
+	username = form.username
+	password = form.password
 	user = authenticate(username=username, password=password)
 	good_template = loader.get_template('user_login.html')
 	exp_template = loader.get_template('exp_user.html')
